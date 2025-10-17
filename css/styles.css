@@ -1,0 +1,41 @@
+@import url(normalize.css);
+@import url(reset.css);
+
+/* Estilos Generales */
+
+body{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #f4f4f4;
+}
+
+.zonaDado{
+    width: 200px;
+    height: 200px;
+
+    background-image: url('../img/todosDados6caras.avif');
+    /* transition: background-position 0.5s ease-in-out; */
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+
+    /* dado 1 = 0px */
+    /* dado 2 = -350px */
+    /* dado 3 = -700px */
+    /* dado 4 = -1050px */
+    /* dado 5 = -1400px */
+    /* dado 6 = -1750px */
+}
+
+/* Botón */
+.btn{
+    padding: 15px 30px;
+    font-size: 28px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
