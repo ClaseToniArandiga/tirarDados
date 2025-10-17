@@ -14,9 +14,9 @@ function tirarDado() {
         [1, "0px center"],
         [2, "-350px center"],
         [3, "-700px center"],
-        [4, "-1050px center"],
-        [5, "-1400px center"],
-        [6, "-1750px center"]
+        [4, "-1060px center"],
+        [5, "-1450px center"],
+        [6, "-1800px center"]
     ]);
 
     // Comparar el resultado si es igual que el key del Mapa y insertar el value en el CSS de zonaDado
