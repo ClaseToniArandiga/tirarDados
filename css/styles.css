@@ -6,11 +6,8 @@
 body{
     height: 100dvh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    background-color: #f4f4f4;
     background-image: url(../img/fondoMadera.jpg);
 }
 
@@ -37,13 +34,3 @@ body{
     }
 }
 
-/* Botón */
-.btn{
-    padding: 15px 30px;
-    font-size: 28px;
-    background-color: #ff0000;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    user-select: none;
-}
