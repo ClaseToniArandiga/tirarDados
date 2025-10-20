@@ -11,21 +11,30 @@ body{
     align-items: center;
     gap: 100px;
     background-color: #f4f4f4;
+    background-image: url(../img/fondoMadera.jpg);
 }
 
 .zonaDado{
     width: 200px;
     height: 200px;
 
-    background-image: url('../img/todosDados6caras.avif');
-    /* transition: background-position 0.5s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    /* dado 1 = 0px */
-    /* dado 2 = -350px */
-    /* dado 3 = -700px */
-    /* dado 4 = -1050px */
-    /* dado 5 = -1400px */
-    /* dado 6 = -1750px */
+    background-image: url('../img/dadoVector.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box shadow solo al svg */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;    
+
+
+    & h1.numerocara{
+        font-size: 100px;
+        color: #333333;
+        user-select: none;
+    }
 }
 
 /* Botón */

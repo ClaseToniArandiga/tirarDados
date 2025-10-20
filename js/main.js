@@ -40,20 +40,15 @@ let dado = {
 const zonaDado = document.getElementById("zonaDado"); // <div></div>
 const boton = document.getElementById("boton"); // <a></a>
 
-const posicionesDado = new Map([
-    [1, "0px center"],
-    [2, "-350px center"],
-    [3, "-700px center"],
-    [4, "-1060px center"],
-    [5, "-1450px center"],
-    [6, "-1800px center"],
-]);
+
 
 
 
 // Botón para tirar el dado
-boton.addEventListener("click", function () {
+zonaDado.addEventListener("click", function () {
     // tirarDado();
     const resultado = dado.tirar();
-    zonaDado.style.backgroundPosition = posicionesDado.get(resultado);
+    zonaDado.children[0].textContent = resultado;
+    // rotación del zonaDado
+    zonaDado.style.transform = "rotate(" + (Math.random() * 90) + "deg)";
 });
