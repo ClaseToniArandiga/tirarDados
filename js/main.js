@@ -9,7 +9,7 @@ let dado = {
     material: ["plástico", "madera", "metal", "resina"],
     color: "blanco",
     opacidad: 1,
-    caras: [4, 6, 8, 10, 12, 20, 100],
+    caras: [4, 6, 8, 10, 12, 20, 1000],
     grabado: false,
     tamano2: {
         ["pequeño"]: "2cm",
