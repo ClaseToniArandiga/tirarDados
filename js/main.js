@@ -49,3 +49,6 @@ zonaDado.addEventListener("click", function () {
     // rotación del zonaDado
     zonaDado.style.transform = "rotate(" + (Math.random() * 90) + "deg)";
 });
+
+
+let dadoDeDiezcarasCantosRectos = {...dado, caras: 10, cantosRedondeados: false};
