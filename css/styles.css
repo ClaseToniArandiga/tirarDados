@@ -3,14 +3,36 @@
 
 /* Estilos Generales */
 
-body{
-    height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/fondoMadera.jpg)
+body {
+    background-image: url(../img/fondoMadera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.dado{
+
+header {
+    height: 15dvh;
+    display: grid;
+    grid-template-columns: auto repeat(9, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+
+    & h3 {
+        grid-row: 1 / 4;
+        font-size: 2rem;
+    }
+}
+
+main {
+    height: 60dvh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dado {
     width: 100px;
     height: 100px;
     background-repeat: no-repeat;
@@ -23,21 +45,43 @@ body{
     margin: 20px;
     color: black;
 
-    & h1{
+    & h1 {
         font-size: 50px;
         user-select: none;
     }
 }
 
-.dado4{
-    background-image: url(../img/dadoVector.svg);
+.dado4 {
+    background-image: url(../img/dado4.svg);
 }
-.dado6{
-    background-image: url(../img/dadoVector.svg);
+.dado6 {
+    background-image: url(../img/dado6.svg);
 }
-.dado8{
-    background-image: url(../img/dadoVector.svg);
+.dado8 {
+    background-image: url(../img/dado8.svg);
 }
-.dado10{
-    background-image: url(../img/dadoVector.svg);
+.dado10 {
+    background-image: url(../img/dado10.svg);
+}
+
+/* Footer */
+footer {
+    height: 25dvh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+
+    & img {
+        width: 100%;
+        cursor: pointer;
+    }
+    & button {
+        grid-column: 1 / 5;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+    }
 }
